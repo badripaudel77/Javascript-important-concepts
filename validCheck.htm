@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>valid check box</title>
+	<script type="text/javascript">
+		
+		function test1() {
+
+		var cb1=document.getElementById('check1');
+		var cb2=document.getElementById('check2');
+
+		if(cb1.checked==false && cb2.checked==false){
+
+			document.getElementById('err').innerHTML="please select at least one";
+			return false;
+   }
+    console.log("console is working ---- Just to check the errors.")
+
+	return true;
+}
+	</script>
+</head>
+<body>
+<h1>Validation of the check box</h1>
+<form name="checkForm" action="">
+
+<input type="checkbox" id="check1">Like
+<input type="checkbox" id="check2">Share
+<br>
+
+<span id="err" style="color: red"></span><br>
+<input type="submit" value="submit" onclick="return test1()">
+
+</form>
+</body>
+</html>

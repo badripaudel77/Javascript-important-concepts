@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Demo JS</title>
+</head>
+<body>
+	<h1>Object demo in JavaScript</h1>
+<script type="text/javascript">
+	
+     let objDemo = {
+       collegeName : "NCIT",
+       collegeAddress : "Lalitpur",
+       collegeOrigin : 1998,
+
+       dispRecord : function()
+       {
+        
+       let details = "The name of the college is "+this.collegeName+", college is located in "+ this.collegeAddress+ " and Was established in "+this.collegeOrigin;
+        document.write(details);
+     }
+};
+
+objDemo['num_std']=2100;
+objDemo.dispRecord();
+document.write(".The number of student in the college is "+objDemo.num_std);
+objDemo.num_std=null;
+document.write("<br>");
+delete objDemo.collegeOrigin;
+objDemo.dispRecord();
+
+document.write(".The number of student in the college is "+objDemo.num_std);
+</script>
+</body>
+</html>

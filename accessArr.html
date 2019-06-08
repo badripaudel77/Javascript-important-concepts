@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<p align="center" style="color: green; font-size: 25px;">This is array acces demo</p>
+		<p id="arrID" align="center"></p>
+		<p id="secId" align="center"></p>
+		<script type="text/javascript">
+			var arr=["car","Bus","Jeep"];
+			
+			document.write(typeof arr);//recognizing an array >> returns object
+		//to string method >> gives String representation of the array
+		document.write(" "+arr.toString());
+		document.write("<br>");
+		arr.sort();
+		document.write("After sorting an array arr:::<br>");
+		document.write(arr);
+		document.write("<br>")         ;
+			document.getElementById('arrID').innerHTM = arr;
+			//modify the updated index
+			arr[0]="Cycle";
+			document.getElementById("secId").innerHTML = arr[0];
+		document.write("<br>");
+		document.write("<br>");
+		</script>
+	</body>
+</html>

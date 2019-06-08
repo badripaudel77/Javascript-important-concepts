@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	
+	input{
+	
+	width:50px;
+	background-color: black;
+	color: white;
+	
+	}
+
+.formStyles{
+	
+	margin:auto;
+	height: 300px;
+	width: 400px;
+	border: 2px solid black;
+
+}
+
+#equal{
+
+	size: 20px;
+}
+
+#res{
+
+	background-color: white;
+	width: 150px;
+	color: green;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="formStyles">
+
+<h1>Calculator using javascript.</h1>
+
+<form name="forms">
+
+<input type="text" name="answers" id="res"><br>
+
+<input type="button" value="1" onclick="forms.answers.value +='1'">
+<input type="button" value="2" onclick="forms.answers.value +='2'">
+<input type="button" value="3" onclick="forms.answers.value +='3'"><br>
+<input type="button" value="4" onclick="forms.answers.value +='4'">
+
+<input type="button" value="5" onclick="forms.answers.value +='5'">
+<input type="button" value="6" onclick="forms.answers.value +='6'">
+<br>
+<input type="button" value="7" onclick="forms.answers.value +='7'">
+<input type="button" value="8" onclick="forms.answers.value +='8'">
+<input type="button" value="9" onclick="forms.answers.value +='9'">
+<br>
+<input type="button" value="0" onclick="forms.answers.value +='0'">
+<input type="button" value="+" onclick="forms.answers.value +='+'">
+<input type="button" value="-" onclick="forms.answers.value +='-'">
+<br>
+<input type="button" value="*" onclick="forms.answers.value +='*'">
+<input type="button" value="/" onclick="forms.answers.value +='/'">
+<input type="button" value="C" onclick="forms.answers.value =''">
+<br>
+<!-- 
+//eval means evaluation 
+//We do not call eval() to evaluate an arithmetic expression; JavaScript evaluates arithmetic expressions automatically. -->
+
+<input type="button" id="equal" value="=" onclick="forms.answers.value=eval(forms.answers.value)">
+
+</form>
+</div>
+
+</body>
+</html>

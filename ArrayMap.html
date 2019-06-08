@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAP FUNCTION IN JS</title>
+</head>
+<body>
+<p id="mapDemo"></p>
+<script >
+	
+var numArr1 = [1,2,5,6];
+
+var numArr2 = numArr1.map(mapFunc);
+
+document.getElementById('mapDemo').innerHTML = "Mapping numarr1 and storing it in numArr2 produces modified result ===> : "+numArr2;
+
+function mapFunc(value) {
+
+	return value ** 2; //return square of the above value.
+}
+</script>
+
+</body>
+</html>

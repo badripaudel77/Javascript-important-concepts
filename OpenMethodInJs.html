@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+	function confirmation() {
+var conf = confirm('do you continue?');
+
+if (conf == true) {
+open("https://www.linkedin.com");
+/*
+or use it.
+window.open("https://www.linkedin.com");
+
+window is the default object of browser so don't need to 
+write it explicitly.
+*/
+}	
+
+else {
+
+document.write('User does not want to visit the page.');
+
+}
+}
+
+var string = new String('hello');
+var string1 = new String('hello');
+document.write(string === string1 + "<br>");
+
+function printWholePage() {
+
+window.print();
+
+}
+</script>
+<button type="button" onclick="confirmation()">click me to visit Linkedin.com</button>
+<button type="button" onclick="printWholePage()">Print Whole Page</button>
+
+
+</body>
+</html>

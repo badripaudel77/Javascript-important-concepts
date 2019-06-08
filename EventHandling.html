@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ <meta charset="utf-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!-- //linking to the external JS file.-->
+ <script type="text/javascript" src="EventHandling.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+
+<h1 class="page-header">Event Handling In JS</h1>
+
+<form method="POST" name="valid" action="" onsubmit="return valueOfJs()">
+
+<div class="form-group">
+
+<label for="uname">Username</label>
+<input type="text" name="uname" id="uname" class="form-control" autocomplete="off">
+<span id="unameErr" style="color: red; background-color: pink; size: 200px;"></span><br>
+
+<label for="pass">Password</label>
+<input type="text" name="upass" class="form-control" id="Userpid"><br>
+
+<label for="pass">Confirm Password</label>
+<input type="text" name="upass1" class="form-control" id="Userpid1">
+<span id="passErr" style="color: red;"></span><br>
+
+
+<label for="emai">Email</label>
+<input type="text" name="uemail" class="form-control" id="Useremail">
+<span id="emailErr" style="color: red;"></span><br>
+
+
+<label for="age" >Age</label>
+<input type="range" class="form-control-range" name="range" min="18" max="35" id="urange">
+<span id="ageErr" style="color: red;"></span><br>
+
+<input type="file" name="uploadFile" class="form-control-file-border">
+<label class="form-check-label">Gender&nbsp</label>
+<input type="radio" name="Gender" value="male" class="form-check-input" id="UserGender">Male
+&nbsp
+<input type="radio" name="Gender" class="form-check-input" id="UserGender" value="female">Female
+&nbsp
+<input type="radio" value="others" name="Gender" class="form-check-input" id="UserGender">Others &nbsp
+<span id="genErr" style="color: red;"></span><br>
+
+<label for="comment">Comment/Note</label>
+<textarea type="textarea" name="textarea" class="form-control" rows="5" cols="5" id="reMe"></textarea>
+<br>
+<input type="checkbox" name="check" class="form-check-input" id="reM" value="ber"> 
+
+
+<label class="form-check-label">Remember Me</label>
+<span id="MeErr" style="color: red;"></span><br>
+<br>
+
+<input type="submit" value="submit" class="btn btn-success">
+
+<input type="reset" value="Reset" class="btn btn-danger" onclick="return valueClear()">
+
+
+<br>
+</div>	
+</form>
+
+</div>
+</body>
+</html> 

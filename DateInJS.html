@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h1>
+	Practicing the date in js
+</h1>
+	<p id="dateId"> </p>
+
+	<p id="date1Id"></p>
+
+<script type="text/javascript">
+
+	var d=new Date();//gives current date
+	var d1=new Date(1997,11,20);//setting your own date like birthday
+	document.getElementById('dateId').innerHTML=d;
+
+	document.getElementById('date1Id').innerHTML=d1;
+	document.write(" Year is "+d.getFullYear()+"<br>");
+	document.write(" Year is "+d1.getFullYear()+"<br>");
+	document.write("Month is in jan as 0 format"+d.getMonth()+"<br>");
+	document.write(" Month is in jan as 0 format"+d1.getMonth()+"<br>");
+
+	document.write(" <br>Getting the day :  sunday as 0 format :  "+d.getDay());
+	document.write(" <br> getting the day : sunday as 0 format :  "+d1.getDay());
+	document.write("<br> setting the date");
+	var sd = new Date();
+	sd.setFullYear(2015);
+	document.write(" getting after setting date"+sd.getFullYear()+" <br>");
+
+
+</script>
+</body>
+
+</html>

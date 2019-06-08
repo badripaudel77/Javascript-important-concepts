@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object in js</title>
+</head>
+<body>
+<script type="text/javascript">
+	  
+	  var obj={
+	  	name : ['Badri ','Paudel'],
+	  	age : 21,
+	  	country : 'Nepal',
+	  	details : function() {
+                   
+                   //we can also call the name proprty by using obj.name, however, the content name will be displayed as it is.
+	  		document.write("Details is ===><br>Name : "+this.name[0]+" "+this.name[1]+ "<br>Age : "+this.age+" and country : "+this.country);
+	  	}
+	  };
+      
+     obj.details();
+    
+     document.write("<br> Again creating the another Object");
+      
+     var obj2={
+	  	names : {firstName : 'Badri', lastName : 'Paudel'},
+	  	ages : 21,
+	  	countrys : 'Nepal',
+	  	details1 : function() {
+                   
+                   //we can also call the name proprty by using obj.name, however, the content name will be displayed as it is.
+	  		   document.write("Details is ===><br>Name : "+this.names.firstName+" "+this.names.lastName+ "<br>Age : "+this.ages+" and country : "+this.countrys);
+	  	}
+	  };
+     obj2.details1();
+  
+</script>
+</body>
+</html>

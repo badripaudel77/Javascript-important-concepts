@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+
+		let payBill = function() {
+         
+         let totalPrice;
+         let totalItem;
+        
+        var pay1 = document.getElementById('money1').value;
+         
+       if(pay1<1 ) {
+
+        alert("Enter at least one item !! ");
+       }
+
+        totalItem = (pay1);
+        totalPrice =(totalItem * 10);
+
+        document.getElementById('bill').value=totalPrice;
+      
+       return false;
+		
+    }
+
+	</script>
+</head>
+
+<body>
+   <h1>Pay Your Bills Now</h1>
+   
+   <form method="POST" action="">
+   
+   	  Enter No. Of Items:<input type="text" name="number1" id="money1" onkeyup="return payBill()"><br>
+
+   	Your Total Bill is: <input type="text" id="bill">NRS<br>
+
+<!--     <button type="button" onkeyup="return payBill()">Calculate</button>
+ -->   
+</form>
+
+</body>
+</html>

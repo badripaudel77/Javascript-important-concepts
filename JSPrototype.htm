@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prototype in JS</title>
+</head>
+<body>
+	<h1>Prototype in JS</h1>
+	<script>
+		function PrototypeDemo(id,security_no,company) {
+
+          this.id=id;
+          this.security_no=security_no;
+          this.company = company;
+          this.funtionDemo = function() {
+          	document.write(" Id is "+ this.id +" security_no is "+ this.security_no+ " and company is "+this.company);
+          }
+
+		}
+		PrototypeDemo.prototype.fullName = " Badri Paudel";
+		var prot = new PrototypeDemo(4354,'123-322','Google');
+        prot.funtionDemo();
+        document.write(" The full name is "+prot.fullName);
+	</script>
+
+</body>
+</html>

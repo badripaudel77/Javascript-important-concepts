@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REgEx In JS</title>
+</head>
+
+<body>
+	//patterns are placed in / here the pattern goes/i  "i" represents case insensitive "g "represents global.
+<script type="text/javascript">
+	var pattern=/e/i;//pattern to be searched
+	var pattern1=/badri/i;//here i is modifier for case insensitive
+
+	//here hello is the target string
+	document.write(pattern.test("hEllo")+" <br>");
+document.write(pattern1.test("BADRI PAUDEL "));
+document.write("<br><br>");
+var patt=/\w{5}\d[0-9]$/;//word must have only  5 char and must be end with digits 0 through 9
+document.write(patt.test("abcde111"));
+
+</script>
+</body>
+</html>
